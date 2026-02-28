@@ -16,7 +16,7 @@ export default function PlateVisual({ plate, size = "md" }: PlateVisualProps) {
         <span>NZ</span>
       </div>
       <span className="font-black tracking-widest text-gray-900 font-mono">
-        {plate}
+        {plate.slice(0, 3)}<span className="text-gray-400">···</span>
       </span>
     </div>
   );
